@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>موقعي الشخصي</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: black;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            width: 250px;
+        }
+
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+        }
+
+        footer {
+            background: #020617;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>🚀 موقعي</h2>
+    <nav>
+        <a href="#">الرئيسية</a>
+        <a href="#skills">مهاراتي</a>
+        <a href="#projects">مشاريعي</a>
+        <a href="#contact">تواصل</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>أنا <span>ALSAYED MOHSEN</span> 👋</h1>
+    <p>طالب في كلية حاسبات ومعلومات 💻</p>
+    <a href="#projects" class="btn">شوف شغلي</a>
+</section>
+
+<section id="skills" class="section">
+    <h2>💡 مهاراتي</h2>
+    <div class="cards">
+        <div class="card">C++</div>
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>📂 مشاريعي</h2>
+    <div class="cards">
+        <div class="card">برنامج إدارة طلاب</div>
+        <div class="card">موقع بسيط</div>
+        <div class="card">Calculator</div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>📞 تواصل معي</h2>
+
+    <p>📧 Email: sm3515528@gmail.com</p>
+    <p>📱 Phone: 01115286497</p>
+
+    <a href="https://wa.me/201115286497" class="btn">راسلني واتساب</a>
+
+    <br><br>
+
+    <form>
+        <input type="text" placeholder="اسمك" required><br><br>
+        <input type="email" placeholder="ايميلك" required><br><br>
+        <textarea placeholder="اكتب رسالتك" required></textarea><br><br>
+
+        <button type="submit" class="btn">إرسال</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 - كل الحقوق محفوظة</p>
+</footer>
+
+</body>
+</html>
