@@ -1,151 +1,148 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>موقعي الشخصي</title>
+<meta charset="UTF-8">
+<title>Cyber Engineer</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial;
-            background: #0f172a;
-            color: white;
-            text-align: center;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Consolas;
+    background: black;
+    color: #00ffcc;
+}
 
-        header {
-            background: #1e293b;
-            padding: 20px;
-        }
+/* Navbar */
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #00ffcc;
+}
 
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+/* Typing */
+.typing {
+    border-right: 2px solid #00ffcc;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(30, end) forwards, blink 0.7s infinite;
+}
 
-        nav a:hover {
-            color: #38bdf8;
-        }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
 
-        .hero {
-            padding: 80px 20px;
-        }
+@keyframes blink {
+    50% { border-color: transparent }
+}
 
-        .hero h1 {
-            font-size: 40px;
-        }
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
 
-        .hero span {
-            color: #38bdf8;
-        }
+.glow {
+    text-shadow: 0 0 10px #00ffcc;
+}
 
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: #38bdf8;
-            color: black;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
+/* Terminal */
+.terminal {
+    background: #020617;
+    border: 1px solid #00ffcc;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+}
 
-        .btn:hover {
-            background: #0ea5e9;
-        }
+.line {
+    margin: 5px 0;
+}
 
-        .section {
-            padding: 60px 20px;
-        }
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid #00ffcc;
+    color: #00ffcc;
+    text-decoration: none;
+}
 
-        .cards {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
+.btn:hover {
+    background: #00ffcc;
+    color: black;
+}
 
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 12px;
-            width: 250px;
-        }
+/* Sections */
+.section {
+    text-align: center;
+    padding: 60px 20px;
+}
 
-        input, textarea {
-            width: 80%;
-            padding: 10px;
-            border-radius: 8px;
-            border: none;
-        }
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
-        footer {
-            background: #020617;
-            padding: 15px;
-            margin-top: 40px;
-        }
-    </style>
+.card {
+    border: 1px solid #00ffcc;
+    padding: 20px;
+    width: 220px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #00ffcc;
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
-    <h2>🚀 موقعي</h2>
-    <nav>
-        <a href="#">الرئيسية</a>
-        <a href="#skills">مهاراتي</a>
-        <a href="#projects">مشاريعي</a>
-        <a href="#contact">تواصل</a>
-    </nav>
+    <h2 class="glow">⚡ Cyber Security Engineer</h2>
 </header>
 
 <section class="hero">
-    <h1>أنا <span>ALSAYED MOHSEN</span> 👋</h1>
-    <p>طالب في كلية حاسبات ومعلومات 💻</p>
-    <a href="#projects" class="btn">شوف شغلي</a>
+    <h1 class="typing">I am ALSAYED MOHSEN| Ethical Hacker</h1>
+    <p class="glow">Securing Systems | Testing Vulnerabilities</p>
+    <a href="#projects" class="btn">Explore</a>
 </section>
 
-<section id="skills" class="section">
-    <h2>💡 مهاراتي</h2>
-    <div class="cards">
-        <div class="card">C++</div>
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-    </div>
-</section>
+<div class="terminal">
+    <div class="line">> initializing system...</div>
+    <div class="line">> scanning vulnerabilities...</div>
+    <div class="line">> access granted ✔</div>
+</div>
 
 <section id="projects" class="section">
-    <h2>📂 مشاريعي</h2>
+    <h2 class="glow">💻 Projects</h2>
     <div class="cards">
-        <div class="card">برنامج إدارة طلاب</div>
-        <div class="card">موقع بسيط</div>
-        <div class="card">Calculator</div>
+        <div class="card">Network Scanner</div>
+        <div class="card">Login Security System</div>
+        <div class="card">Encryption Tool</div>
     </div>
 </section>
 
-<section id="contact" class="section">
-    <h2>📞 تواصل معي</h2>
-
-    <p>📧 Email: sm3515528@gmail.com</p>
-    <p>📱 Phone: 01115286497</p>
-
-    <a href="https://wa.me/201115286497" class="btn">راسلني واتساب</a>
-
-    <br><br>
-
-    <form>
-        <input type="text" placeholder="اسمك" required><br><br>
-        <input type="email" placeholder="ايميلك" required><br><br>
-        <textarea placeholder="اكتب رسالتك" required></textarea><br><br>
-
-        <button type="submit" class="btn">إرسال</button>
-    </form>
+<section class="section">
+    <h2 class="glow">📞 Contact</h2>
+    <p>Email: alsayed@example.com</p>
+    <a href="#" class="btn">Contact Me</a>
 </section>
 
 <footer>
-    <p>© 2026 - كل الحقوق محفوظة</p>
+    <p>© 2026 Cyber Portfolio</p>
 </footer>
 
 </body>
