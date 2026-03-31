@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cyber Security Engineer | ALSAYED MOHSEN</title>
 
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
-/* Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -21,121 +23,92 @@ body {
     font-family: 'Consolas', monospace;
     color: #00ffcc;
     text-align: center;
-    min-height: 100vh; /* يضمن إن الصفحة واخدة طول الشاشة كحد أدنى */
-    
-    /* تثبيت الخلفية وجعلها تغطي الشاشة بالكامل */
+    min-height: 100vh;
     background: url('bg.jpg') no-repeat center center fixed;
     background-size: cover;
-    
-    /* إضافة الطبقة الشفافة مباشرة كخلفية إضافية لضمان الثبات */
-    position: relative;
-    background-color: #000; /* لون احتياطي في حال لم تحمل الصورة */
+    background-color: #000;
 }
 
-/* Overlay - الطبقة السوداء الشفافة */
 body::before {
     content: "";
-    position: fixed; /* ثابتة مع السكرول */
-    top: 0;
-    left: 0;
+    position: fixed;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.75); /* درجة الشفافية */
-    z-index: -1; /* خلف المحتوى */
+    background: rgba(0,0,0,0.75);
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
-/* Header */
 header {
     padding: 20px;
-    border-bottom: 1px solid rgba(0, 255, 204, 0.3);
-    background: rgba(0, 0, 0, 0.5); /* خلفية بسيطة للهيدر */
+    border-bottom: 1px solid rgba(0,255,204,0.3);
+    background: rgba(0,0,0,0.5);
 }
 
 nav a {
     color: #00ffcc;
     margin: 0 15px;
     text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
 }
 
-nav a:hover {
-    text-shadow: 0 0 10px #00ffcc;
-    color: #fff;
-}
-
-/* Hero Section */
 .hero {
     padding: 150px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .glow {
-    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
 }
 
-.hero h1 {
-    font-size: clamp(30px, 8vw, 60px); /* حجم خط مرن للموبايل */
-    margin-bottom: 10px;
-}
-
-/* Button */
 .btn {
     display: inline-block;
-    margin-top: 30px;
-    padding: 12px 30px;
+    margin-top: 20px;
+    padding: 10px 25px;
     border: 2px solid #00ffcc;
     color: #00ffcc;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: 0.4s;
 }
 
-.btn:hover {
-    background: #00ffcc;
-    color: black;
-    box-shadow: 0 0 20px #00ffcc;
-}
-
-/* Sections */
 .section {
-    padding: 80px 20px;
+    padding: 60px 20px;
 }
 
-/* Cards */
 .cards {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
     flex-wrap: wrap;
-    margin-top: 40px;
 }
 
 .card {
-    background: rgba(0, 255, 204, 0.05); /* لمسة خضراء شفافة */
     border: 1px solid #00ffcc;
-    padding: 30px;
-    width: 280px;
-    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+}
+
+/* Social Icons */
+.social {
+    margin-top: 30px;
+}
+
+.social a {
+    margin: 10px;
+    font-size: 30px;
+    color: #00ffcc;
     transition: 0.3s;
-    backdrop-filter: blur(5px); /* تأثير زجاجي */
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    background: rgba(0, 255, 204, 0.1);
-    box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+.social a:hover {
+    color: #fff;
 }
 
-/* Footer */
+.social a:nth-child(1):hover { color: #25D366; }
+.social a:nth-child(2):hover { color: #E1306C; }
+.social a:nth-child(3):hover { color: #1877F2; }
+.social a:nth-child(4):hover { color: #0088cc; }
+
 footer {
-    padding: 40px 20px;
-    border-top: 1px solid rgba(0, 255, 204, 0.2);
-    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
 }
 </style>
 
@@ -144,7 +117,7 @@ footer {
 <body>
 
 <header>
-    <h2 class="glow">⚡️ Cyber Engineer</h2>
+    <h2 class="glow">⚡ Cyber Engineer</h2>
     <nav>
         <a href="#">Home</a>
         <a href="#skills">Skills</a>
@@ -153,40 +126,46 @@ footer {
     </nav>
 </header>
 
-<main>
-    <section class="hero">
-        <h1>I am <span class="glow">ALSAYED MOHSEN</span></h1>
-        <p style="font-size: 1.2rem; opacity: 0.8;">Cyber Security Engineer | Ethical Hacker</p>
-        <a href="#projects" class="btn">View My Work</a>
-    </section>
+<section class="hero">
+    <h1>I am <span class="glow">ALSAYED MOHSEN</span></h1>
+    <p>Cyber Security Engineer | Ethical Hacker</p>
+</section>
 
-    <section id="skills" class="section">
-        <h2 class="glow">⚡️ Skills</h2>
-        <div class="cards">
-            <div class="card">Penetration Testing</div>
-            <div class="card">Network Security</div>
-            <div class="card">Python / C++</div>
-        </div>
-    </section>
+<section id="skills" class="section">
+    <h2 class="glow">Skills</h2>
+    <div class="cards">
+        <div class="card">Penetration Testing</div>
+        <div class="card">Network Security</div>
+        <div class="card">Python / C++</div>
+    </div>
+</section>
 
-    <section id="projects" class="section">
-        <h2 class="glow">💻 Projects</h2>
-        <div class="cards">
-            <div class="card">Password Cracker</div>
-            <div class="card">Login System</div>
-            <div class="card">Network Scanner</div>
-        </div>
-    </section>
+<section id="projects" class="section">
+    <h2 class="glow">Projects</h2>
+    <div class="cards">
+        <div class="card">Password Cracker</div>
+        <div class="card">Login System</div>
+        <div class="card">Network Scanner</div>
+    </div>
+</section>
 
-    <section id="contact" class="section">
-        <h2 class="glow">📞 Contact</h2>
-        <p>Email: sm3515528@gmail.com</p>
-        <p>Phone: 01115286497</p>
-        <a href="https://wa.me/201115286497" class="btn">راسلني واتساب</a>
-    </section>
-</main>
+<section id="contact" class="section">
+    <h2 class="glow">Contact</h2>
+    <p>Email: sm3515528@gmail.com</p>
+    <p>Phone: 01115286497</p>
+
+    <!-- Social Icons -->
+    <div class="social">
+        <a href="https://wa.me/201115286497"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com/alsayed.mohsen.26"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/alsayed.mohsen.26"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://t.me/ALSAYED_MOHSEN"><i class="fab fa-telegram"></i></a>
+    </div>
+
+</section>
+
 <footer>
-    <p>© 2026 ALSAYED MOHSEN | Secured Portfolio</p>
+    <p>© 2026 ALSAYED MOHSEN</p>
 </footer>
 
 </body>
