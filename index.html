@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cyber Security Engineer | ALSAYED MOHSEN</title>
 
-<!-- Font Awesome Icons -->
+<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    font-family: 'Consolas', monospace;
+    font-family: Consolas, monospace;
     color: #00ffcc;
     text-align: center;
     min-height: 100vh;
@@ -60,13 +60,16 @@ nav a {
     text-shadow: 0 0 10px #00ffcc;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 25px;
-    border: 2px solid #00ffcc;
-    color: #00ffcc;
-    text-decoration: none;
+/* Typing effect */
+#typing::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {opacity:1;}
+    50% {opacity:0;}
+    100% {opacity:1;}
 }
 
 .section {
@@ -86,7 +89,7 @@ nav a {
     width: 250px;
 }
 
-/* Social Icons */
+/* Social */
 .social {
     margin-top: 30px;
 }
@@ -111,7 +114,6 @@ footer {
     padding: 30px;
 }
 </style>
-
 </head>
 
 <body>
@@ -127,8 +129,8 @@ footer {
 </header>
 
 <section class="hero">
-    <h1>I am <span class="glow">ALSAYED MOHSEN</span></h1>
-    <p>Cyber Security Engineer | Ethical Hacker</p>
+    <h1 id="typing" class="glow"></h1>
+    <p id="typing2"></p>
 </section>
 
 <section id="skills" class="section">
@@ -154,19 +156,45 @@ footer {
     <p>Email: sm3515528@gmail.com</p>
     <p>Phone: 01115286497</p>
 
-    <!-- Social Icons -->
     <div class="social">
         <a href="https://wa.me/201115286497"><i class="fab fa-whatsapp"></i></a>
         <a href="https://instagram.com/alsayed.mohsen.26"><i class="fab fa-instagram"></i></a>
         <a href="https://facebook.com/alsayed.mohsen.26"><i class="fab fa-facebook-f"></i></a>
         <a href="https://t.me/ALSAYED_MOHSEN"><i class="fab fa-telegram"></i></a>
     </div>
-
 </section>
 
 <footer>
     <p>© 2026 ALSAYED MOHSEN</p>
 </footer>
+
+<script>
+let text1 = "I am ALSAYED MOHSEN";
+let text2 = "Cyber Security Engineer | Ethical Hacker";
+
+let i = 0;
+let j = 0;
+
+function typingEffect1() {
+    if (i < text1.length) {
+        document.getElementById("typing").innerHTML += text1.charAt(i);
+        i++;
+        setTimeout(typingEffect1, 70);
+    } else {
+        setTimeout(typingEffect2, 300);
+    }
+}
+
+function typingEffect2() {
+    if (j < text2.length) {
+        document.getElementById("typing2").innerHTML += text2.charAt(j);
+        j++;
+        setTimeout(typingEffect2, 50);
+    }
+}
+
+typingEffect1();
+</script>
 
 </body>
 </html>
